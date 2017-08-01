@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+float Fahrenheit(float);
+
+int main()
+{
+    float Celsius;
+    cout << "Please enter a Celsius value: "<<endl;
+    cin >> Celsius;
+    float Fahren = Fahrenheit(Celsius);
+    cout << Celsius << "degrees Celsious is " << Fahren << "degree Fahrenheit"<<endl;
+    return 0;
+    
+}
+
+float Fahrenheit(float sts)
+{
+    return 1.8 * sts + 32 ;
+}
